@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutVC" customModule="Project" customModuleProvider="target">
+            <connections>
+                <outlet property="top" destination="IQ2-Gy-iij" id="gV8-eN-bJp"/>
+                <outlet property="version" destination="GJk-ea-6gm" id="z38-of-vvS"/>
+                <outlet property="versionStatus" destination="3n7-Bm-JDG" id="S5z-7m-q0i"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="imf-Kn-2hD">
+                    <rect key="frame" x="132.5" y="100" width="110" height="110"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玉龙传媒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJk-ea-6gm">
+                    <rect key="frame" x="20" y="230" width="335" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCd-C9-JWe">
+                    <rect key="frame" x="15" y="279" width="345" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="检查更新" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cd8-1k-UCl">
+                            <rect key="frame" x="15" y="11.5" width="61.5" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="有新版本可用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3n7-Bm-JDG">
+                            <rect key="frame" x="238" y="11.5" width="92" height="18"/>
+                            <gestureRecognizers/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="3n7-Bm-JDG" firstAttribute="centerY" secondItem="JCd-C9-JWe" secondAttribute="centerY" id="Eg4-vc-sW2"/>
+                        <constraint firstItem="Cd8-1k-UCl" firstAttribute="centerY" secondItem="JCd-C9-JWe" secondAttribute="centerY" id="a2q-ig-en0"/>
+                        <constraint firstAttribute="height" constant="40" id="sc0-ft-5x2"/>
+                        <constraint firstAttribute="trailing" secondItem="3n7-Bm-JDG" secondAttribute="trailing" constant="15" id="uv5-cv-teg"/>
+                        <constraint firstItem="Cd8-1k-UCl" firstAttribute="leading" secondItem="JCd-C9-JWe" secondAttribute="leading" constant="15" id="xTU-3u-WkZ"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Akm-Gy-tNm" appends="YES" id="3BG-BR-UoS"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4G-Qm-tuW">
+                    <rect key="frame" x="15" y="361" width="345" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玉龙传媒用户合作政策" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QD-2F-0bP">
+                            <rect key="frame" x="15" y="11.5" width="153" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enterthearrow" translatesAutoresizingMaskIntoConstraints="NO" id="Ako-j4-DRL">
+                            <rect key="frame" x="322" y="12" width="8" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8eS-U7-keY"/>
+                        <constraint firstItem="5QD-2F-0bP" firstAttribute="centerY" secondItem="I4G-Qm-tuW" secondAttribute="centerY" id="MG1-8S-IvV"/>
+                        <constraint firstItem="5QD-2F-0bP" firstAttribute="leading" secondItem="I4G-Qm-tuW" secondAttribute="leading" constant="15" id="fAA-Nk-vgO"/>
+                        <constraint firstItem="Ako-j4-DRL" firstAttribute="centerY" secondItem="I4G-Qm-tuW" secondAttribute="centerY" id="jWv-GZ-qZa"/>
+                        <constraint firstAttribute="trailing" secondItem="Ako-j4-DRL" secondAttribute="trailing" constant="15" id="lVr-yn-n2o"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="14Z-xF-OnY" appends="YES" id="40E-ES-YBj"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7SN-5t-sbw">
+                    <rect key="frame" x="15" y="320" width="345" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玉龙传媒用户服务协议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7f-pA-hCH">
+                            <rect key="frame" x="15" y="11.5" width="153" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="enterthearrow" translatesAutoresizingMaskIntoConstraints="NO" id="krX-25-Dj4">
+                            <rect key="frame" x="322" y="12.5" width="8" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="L7f-pA-hCH" firstAttribute="centerY" secondItem="7SN-5t-sbw" secondAttribute="centerY" id="2G7-IP-ZBX"/>
+                        <constraint firstItem="krX-25-Dj4" firstAttribute="centerY" secondItem="7SN-5t-sbw" secondAttribute="centerY" id="L5R-Dt-sIh"/>
+                        <constraint firstAttribute="trailing" secondItem="krX-25-Dj4" secondAttribute="trailing" constant="15" id="cjC-zt-dxq"/>
+                        <constraint firstItem="L7f-pA-hCH" firstAttribute="leading" secondItem="7SN-5t-sbw" secondAttribute="leading" constant="15" id="meo-pL-Wfl"/>
+                        <constraint firstAttribute="height" constant="40" id="t3u-U5-wbR"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="0gf-7a-vnn" appends="YES" id="N8d-MI-6ME"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ3-Oi-i91">
+                    <rect key="frame" x="15" y="606" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © bjyltf.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgF-Jy-8pR">
+                    <rect key="frame" x="15" y="583" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玉龙传媒 版权所有" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WyQ-sG-vYR">
+                    <rect key="frame" x="15" y="560" width="345" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.90592447919999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="7SN-5t-sbw" firstAttribute="top" secondItem="JCd-C9-JWe" secondAttribute="bottom" constant="1" id="2C4-qt-JVb"/>
+                <constraint firstItem="vZ3-Oi-i91" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="4zr-Pp-Q5L"/>
+                <constraint firstItem="WyQ-sG-vYR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="52x-dq-ZPJ"/>
+                <constraint firstItem="I4G-Qm-tuW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="9tE-UG-O5I"/>
+                <constraint firstAttribute="trailing" secondItem="WyQ-sG-vYR" secondAttribute="trailing" constant="15" id="Blc-aI-McO"/>
+                <constraint firstItem="GJk-ea-6gm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="E68-Fv-HTR"/>
+                <constraint firstItem="GJk-ea-6gm" firstAttribute="top" secondItem="imf-Kn-2hD" secondAttribute="bottom" constant="20" id="Ffu-6R-Gu1"/>
+                <constraint firstItem="imf-Kn-2hD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="IQ2-Gy-iij"/>
+                <constraint firstAttribute="trailing" secondItem="GJk-ea-6gm" secondAttribute="trailing" constant="20" id="TzJ-61-ars"/>
+                <constraint firstAttribute="bottom" secondItem="vZ3-Oi-i91" secondAttribute="bottom" constant="40" id="Vds-wC-aqP"/>
+                <constraint firstItem="jgF-Jy-8pR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Wjs-Zy-655"/>
+                <constraint firstAttribute="trailing" secondItem="JCd-C9-JWe" secondAttribute="trailing" constant="15" id="XKh-6I-m2L"/>
+                <constraint firstItem="I4G-Qm-tuW" firstAttribute="top" secondItem="7SN-5t-sbw" secondAttribute="bottom" constant="1" id="aJD-Bq-cVM"/>
+                <constraint firstItem="JCd-C9-JWe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="aTt-WO-3YI"/>
+                <constraint firstItem="7SN-5t-sbw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="bgV-8Q-QGo"/>
+                <constraint firstAttribute="trailing" secondItem="7SN-5t-sbw" secondAttribute="trailing" constant="15" id="cMF-WL-FPr"/>
+                <constraint firstItem="jgF-Jy-8pR" firstAttribute="top" secondItem="WyQ-sG-vYR" secondAttribute="bottom" constant="2" id="fEW-z6-MfL"/>
+                <constraint firstAttribute="trailing" secondItem="I4G-Qm-tuW" secondAttribute="trailing" constant="15" id="gdI-wA-RLK"/>
+                <constraint firstAttribute="trailing" secondItem="vZ3-Oi-i91" secondAttribute="trailing" constant="15" id="jNl-l3-YIw"/>
+                <constraint firstItem="imf-Kn-2hD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="phk-W6-HWH"/>
+                <constraint firstItem="vZ3-Oi-i91" firstAttribute="top" secondItem="jgF-Jy-8pR" secondAttribute="bottom" constant="2" id="t37-fH-jAz"/>
+                <constraint firstItem="JCd-C9-JWe" firstAttribute="top" secondItem="GJk-ea-6gm" secondAttribute="bottom" constant="28.5" id="tud-N2-a62"/>
+                <constraint firstAttribute="trailing" secondItem="jgF-Jy-8pR" secondAttribute="trailing" constant="15" id="wOb-6p-db5"/>
+            </constraints>
+        </view>
+        <tapGestureRecognizer id="0gf-7a-vnn" userLabel="fuwu">
+            <connections>
+                <action selector="fuwuAction:" destination="-1" id="W5D-Np-Hqd"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="14Z-xF-OnY" userLabel="jianzhi">
+            <connections>
+                <action selector="jianzhiAction:" destination="-1" id="Y9I-1D-gxB"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Akm-Gy-tNm" userLabel="jiancha">
+            <connections>
+                <action selector="jianchaAction:" destination="-1" id="TwL-5q-Oez"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="enterthearrow" width="8" height="15"/>
+        <image name="logo" width="110" height="110"/>
+    </resources>
+</document>
